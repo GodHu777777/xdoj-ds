@@ -1,0 +1,50 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char str[100],stack[100],top;
+	top=-1;//top=-1表示栈为空，入栈top加一然后入栈，出栈top-1
+	gets(str);
+    int i,len,flag=1;
+	len=strlen(str);//字符串的长度
+	for(i=0;i<len;i++)
+	{
+		if(str[i]=='('||str[i]=='{'||str[i]=='[')//左括号入栈
+		{
+			top++;
+			stack[top]=str[i];
+		}
+		if(str[i]==')')
+		{
+			if(stack[top]=='(')//右括号匹配
+			 top--;
+			else//右括号不匹配
+			{
+				flag=0;break;
+			}
+		}
+		if(str[i]=='}')
+		{
+			if(stack[top]=='{')
+			 top--;
+			else
+			{
+				flag=0;break;
+			}
+		}
+		if(str[i]==']')
+		{
+			if(stack[top]=='[')
+			 top--;
+			else
+			{
+				flag=0;break;
+			}
+		}	
+	}
+	if(flag==1&&top==-1)//左右括号都匹配且栈空
+		printf("right");
+	else
+		printf("wrong");
+	return 0;
+}
