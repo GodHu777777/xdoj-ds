@@ -1,50 +1,64 @@
-#include<stdio.h>
-#include<string.h>
+#include<bits/stdc++.h>
+using namespace std;
+
+char myPair(char c)
+{
+    if(c == ')') return '(';
+    if(c == ']') return '[';
+    if(c == '}') return '{';
+}
+
+bool isLeftBrace(char c)
+{
+    if(c == '(') return 1;
+    if(c == '[') return 1;
+    if(c == '{') return 1;
+    return 0;
+}
+
+bool isRightBrace(char c)
+{
+    if(c == ')') return 1;
+    if(c == ']') return 1;
+    if(c == '}') return 1;
+    return 0;
+}
+
+void solve(string s)
+{
+    char stk[145];
+    int top = -1;
+    for(int i = 0; i < s.size(); i++)
+    {
+        char c = s[i];
+        if(isLeftBrace(c))
+            {
+            stk[++top] = c;
+        }   
+        if(isRightBrace(c))
+        {
+            if(stk[top] == myPair(c))
+            {
+                top--;
+            }
+            else {
+                cout << "Mismatch" << endl;
+                return;
+            }
+        }
+    }
+    if(top == -1) cout << "Match" << endl;
+    else cout << "Mismatch" << endl;
+}
+
 int main()
 {
-	char str[100],stack[100],top;
-	top=-1;//top=-1表示栈为空，入栈top加一然后入栈，出栈top-1
-	gets(str);
-    int i,len,flag=1;
-	len=strlen(str);//字符串的长度
-	for(i=0;i<len;i++)
-	{
-		if(str[i]=='('||str[i]=='{'||str[i]=='[')//左括号入栈
-		{
-			top++;
-			stack[top]=str[i];
-		}
-		if(str[i]==')')
-		{
-			if(stack[top]=='(')//右括号匹配
-			 top--;
-			else//右括号不匹配
-			{
-				flag=0;break;
-			}
-		}
-		if(str[i]=='}')
-		{
-			if(stack[top]=='{')
-			 top--;
-			else
-			{
-				flag=0;break;
-			}
-		}
-		if(str[i]==']')
-		{
-			if(stack[top]=='[')
-			 top--;
-			else
-			{
-				flag=0;break;
-			}
-		}	
-	}
-	if(flag==1&&top==-1)//左右括号都匹配且栈空
-		printf("right");
-	else
-		printf("wrong");
-	return 0;
+    string s;
+    while(cin >> s)
+    {
+        if(s != "**0000**")
+            solve(s);
+    }
+
+    return 0;
 }
