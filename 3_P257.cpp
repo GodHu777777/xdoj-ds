@@ -4,7 +4,8 @@ using namespace std;
 int main()
 {
     string s1,s2;
-    cin >> s1 >> s2;
+    getline(cin,s1);
+    getline(cin,s2);
     //convert all the uppercase letters to lowercase in both strings
     for(int i = 0; i < s1.size(); i++)
         if(s1[i] >= 'A' && s1[i] <= 'Z')
