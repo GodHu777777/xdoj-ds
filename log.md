@@ -15,4 +15,5 @@ Today I learnt KMP algorithm,whose key is the __next array__,which is like a suf
 _Oct 26th_
 
 If the variable's range is relatively small,we can use bucket to store the number of variable(e.g. 3_P164) and do sorting job.
+
 Today I learnt how to manage a git repository across 2 devices,just push and pull regularly like before a break you do a push and before start do a pull.
