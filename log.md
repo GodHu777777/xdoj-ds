@@ -12,3 +12,7 @@ Be __CAUTIOUS__ about the _INDEX-OUT-OF-BOUND_ error while using array,e.g. usin
 
 Today I learnt KMP algorithm,whose key is the __next array__,which is like a suffix table.The index of next array usually starts by 1,(meanwhile index of string starts by 0,both things don't conflict)and always the value of ne[1] is always 0(we often use __ne__ to name the array since _next_ is used in C++).It's a little hard to understand so I will do more practice.
 
+_Oct 26th_
+
+If the variable's range is relatively small,we can use bucket to store the number of variable(e.g. 3_P164) and do sorting job.
+Today I learnt how to manage a git repository across 2 devices,just push and pull regularly like before a break you do a push and before start do a pull.
