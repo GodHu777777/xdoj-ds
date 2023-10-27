@@ -17,3 +17,7 @@ _Oct 26th_
 If the variable's range is relatively small,we can use bucket to store the number of variable(e.g. 3_P164) and do sorting job.
 
 Today I learnt how to manage a git repository across 2 devices,just push and pull regularly like before a break you do a push and before start do a pull.
+
+_Oct 27th_
+
+[priority_queue](https://en.cppreference.com/w/cpp/container/priority_queue#:~:text=A%20priority%20queueis%20a%20container%20adaptor%20that%20provides,the%20smallest%20element%20to%20appear%20as%20the%20top%28%29.)is useful.
