@@ -21,3 +21,14 @@ Today I learnt how to manage a git repository across 2 devices,just push and pul
 _Oct 27th_
 
 [priority_queue](https://en.cppreference.com/w/cpp/container/priority_queue#:~:text=A%20priority%20queueis%20a%20container%20adaptor%20that%20provides,the%20smallest%20element%20to%20appear%20as%20the%20top%28%29.) is useful.
+
+_Oct 28th_
+[string](https://cplusplus.com/reference/string/string/) is undoubtedly powerful,it can make comparison of 2 string lexicographically(~~字典序地~~).
+e.g.
+
+    ```
+    bool cmp(string s1,string s2)
+    {
+        return s1 < s2;
+    }
+    ```
