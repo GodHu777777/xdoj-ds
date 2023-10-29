@@ -23,6 +23,7 @@ _Oct 27th_
 [priority_queue](https://en.cppreference.com/w/cpp/container/priority_queue#:~:text=A%20priority%20queueis%20a%20container%20adaptor%20that%20provides,the%20smallest%20element%20to%20appear%20as%20the%20top%28%29.) is useful.
 
 _Oct 28th_
+
 [string](https://cplusplus.com/reference/string/string/) is undoubtedly powerful,it can make comparison of 2 string lexicographically(~~字典序地~~).
 e.g.
 
@@ -32,3 +33,7 @@ e.g.
         return s1 < s2;
     }
     ```
+
+_Oct 29th_
+
+Today I learnt using [deque](https://en.cppreference.com/w/cpp/container/deque) to solve a problem from codeforces([P1889A](https://codeforces.com/contest/1889/problem/A)),I think its algorithm is basically based on **RECURSION**,like split up the whole problem into pieces and then solve it step by step easier.
