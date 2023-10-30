@@ -37,3 +37,7 @@ e.g.
 _Oct 29th_
 
 Today I learnt using [deque](https://en.cppreference.com/w/cpp/container/deque) to solve a problem from codeforces([P1889A](https://codeforces.com/contest/1889/problem/A)),I think its algorithm is basically based on **RECURSION**,like split up the whole problem into pieces and then solve it step by step easier.
+
+_Oct 30th_
+
+Struct without pointer member can be assgined directly by __=__ operator.(1_P258.cpp line 33)
