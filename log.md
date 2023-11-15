@@ -47,3 +47,7 @@ Struct without pointer member can be assgined directly by $=$ operator.(1_P258.c
 OK,I'm back.Sadly in recent days I still don't have enough cause I need to lay a foundation about deep learning and computer vision thing TT,this is kind of tricky for me such a beginner.
 
 Today I finish 2 test1 problems and name the files as __1t_P***.cpp__.It will ends on Nov$^{19th}$,time is tough.
+
+# Nov 14th
+
+test 1 is done.bucket sorting is useful.
