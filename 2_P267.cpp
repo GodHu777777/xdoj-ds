@@ -16,26 +16,30 @@ void solve()
     //when top equals to 0,the stack is empty
     for(int i = 0; i < n; i++)
     {
-        //do iteration until stack-top is the target item
+        //do iteration until top element is target item
         while(stk[top] != ans[i])
         {
             stk[++top] = a[++idx];
+            if(top > m || idx > n - 1)
+            {
+                cout << "NO" << endl;
+                return;
+            }
         }  
         if(top > m || idx > n - 1)
         {
             cout << "NO" << endl;
             return;
         }
-        //now the top of stack is the target,just pop it
+        //now the top of stack is the current target,just pop it
         top--;
     }
     cout << "YES" << endl;
 }
 
 int main()
-{
-    
-    cin >> n >> m >> k;
+{ 
+    cin >> m >> n >> k;
     for(int i = 0; i < n; i++) cin >> a[i];
     while(k--)
     {
